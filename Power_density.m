@@ -47,7 +47,7 @@ Pwr_COVID = cat(3, f1, f2, f3, f4, f5);
 
 
 % Primary insomnia
-% Load your EEG matrix: time points * channels * patients 
+% Load your EEG matrix, sleep or waking EEG: time points * channels * patients 
 load Insom_notch.mat
 
 t = 1:win;
@@ -77,7 +77,7 @@ Pwr_Insom = cat(3, f1, f2, f3, f4, f5);
 
 
 % Healthy controls
-% Load your EEG matrix: time points * channels * patients 
+% Load your EEG matrix, sleep or waking EEG: time points * channels * patients 
 load NC_notch.mat
 
 t = 1:win;
