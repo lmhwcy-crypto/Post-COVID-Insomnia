@@ -1,6 +1,6 @@
 clear all, close all, clc
 
-% Load your EEG matrix: record1 = channels * time points
+% Load your EEG matrix, sleep or waking EEG: record1 = channels * time points
 
 % Filter EEG with a Notch filter at 60 Hz
 
@@ -21,7 +21,7 @@ clear all, close all, clc
 
 load ChanLabels_CGMH.mat     % Channel label vetor
 
-% Load your EEG matrix: record = channels * time points
+% Load your EEG matrix, sleep or waking EEG: record = channels * time points
 nbchans = 21;
 data    = record(1:nbchans, :);   
 
