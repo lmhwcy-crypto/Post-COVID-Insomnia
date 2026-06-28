@@ -1,7 +1,7 @@
 clear all, close all, clc
 
 % Post-COVID insomnia
-% Load your EEG matrix: time points * channels * patients 
+% Load your EEG matrix, sleep or waking EEG: time points * channels * patients 
 load COVID_notch.mat
 
 Fs      = 250;          % Your sampling rate
