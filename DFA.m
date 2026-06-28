@@ -1,7 +1,7 @@
 % DFA
 clear all, close all, clc
 
-% Load your EEG matrix: time points * channels * patients 
+% Load your EEG matrix, sleep or waking EEG: time points * channels * patients 
 load COVID_notch.mat
 
 nbchans = size(COVID_notch, 2);
