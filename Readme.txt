@@ -2,7 +2,7 @@ Codes for the Manuscript:
 
 Distinct Electrophysiological Signatures of Post-COVID and Primary Insomnia: Insights from Long-Range Temporal Correlations in EEG
 
-I. ICA.m
+Part I. ICA.m
 1. Load your EEG matrix, sleep or waking EEG: 
    record1 = channels * time points
    Set your sampling rate, srate.
@@ -24,7 +24,7 @@ I. ICA.m
    Subplot 1 is the original EEG.
    Subplot 2 is the cleaned EEG.
 
-II. DFA.m
+Part II. DFA.m
 1. Load your EEG matrix, sleep or waking EEG: time points * channels * patients.
 2. Set your sampling rate, Fs.
 3. Set the fit intervals for DFA in seconds, FitInterval. 
@@ -32,7 +32,7 @@ II. DFA.m
 4. Set the frequency bands of interests, Freqs.
 5. Collect the DFA exponent matrix: channels * patients * frequencies.
 
-III. Power_density.m
+Part III. Power_density.m
 1. Load your EEG matrix, sleep or waking EEG: time points * channels * patients. 
 2. Set your sampling rate, Fs.
 3. Do Multitaper power spectral density estimate.
