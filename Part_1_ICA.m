@@ -19,9 +19,9 @@ record  = record2';
 
 clear all, close all, clc
 
-load ChanLabels_CGMH.mat     % Channel label vetor
-
 % Load your EEG matrix, sleep or waking EEG: record = channels * time points
+% Load ChanLabels, your Channel label vector
+
 nbchans = 21;
 data    = record(1:nbchans, :);   
 
