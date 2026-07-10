@@ -9,8 +9,7 @@ Fs      = 250;     % Your sampling rate
 nyquist = Fs/2;
 
 CalcInterval = [0.8 100];         
-% Set the fit intervals in seconds. The upper limit should be <10% of
-% signal length.
+% Set the fit intervals in seconds. The upper limit should be <10% of signal length.
 FitInterval  = [2 50];                    
 logbin       = 25;
 d1  = floor(log10(CalcInterval(1) * Fs));    
