@@ -75,7 +75,7 @@ Pwr_Insom = cat(3, f1, f2, f3, f4, f5);
 
 
 % Healthy controls
-% % Load your EEG matrix (sleep or waking), NC_notch = time points * channels * patients 
+% Load your EEG matrix (sleep or waking), NC_notch = time points * channels * patients 
 
 t = 1:win;
 NC = NaN(win, nbwins, nbchans, nbpts);
