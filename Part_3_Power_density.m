@@ -1,8 +1,7 @@
 clear all, close all, clc
 
 % Post-COVID insomnia
-% Load your EEG matrix, sleep or waking EEG: time points * channels * patients 
-load COVID_notch.mat
+% Load your EEG matrix (sleep or waking), COVID_notch = time points * channels * patients 
 
 Fs      = 250;          % Your sampling rate
 nbchans = size(COVID_notch, 2);
@@ -47,8 +46,7 @@ Pwr_COVID = cat(3, f1, f2, f3, f4, f5);
 
 
 % Primary insomnia
-% Load your EEG matrix, sleep or waking EEG: time points * channels * patients 
-load Insom_notch.mat
+% Load your EEG matrix (sleep or waking), Insom_notch = time points * channels * patients 
 
 t = 1:win;
 Insom = NaN(win, nbwins, nbchans, nbpts);
@@ -77,8 +75,7 @@ Pwr_Insom = cat(3, f1, f2, f3, f4, f5);
 
 
 % Healthy controls
-% Load your EEG matrix, sleep or waking EEG: time points * channels * patients 
-load NC_notch.mat
+% % Load your EEG matrix (sleep or waking), NC_notch = time points * channels * patients 
 
 t = 1:win;
 NC = NaN(win, nbwins, nbchans, nbpts);
